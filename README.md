@@ -62,9 +62,3 @@ Si tu veux contribuer à ce projet, tu peux :
 3. Commit tes modifications (`git commit -am 'Ajout d\'une nouvelle fonctionnalité'`).
 4. Pousser la branche (`git push origin feature-nouvelle-fonction`).
 5. Ouvrir une **Pull Request**.
-
-## Licence
-Ce projet est sous licence **MIT** - consulte le fichier [LICENSE](LICENSE) pour plus de détails.
-```
-
----
