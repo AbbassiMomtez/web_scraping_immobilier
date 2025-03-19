@@ -54,11 +54,3 @@ Avant de pouvoir utiliser ce projet, assure-toi que tu as installé Python et le
 │── README.md              # Ce fichier
 │── .gitignore             # Exclure fichiers inutiles (cache, venv, etc.)
 ```
-
-## Contributions
-Si tu veux contribuer à ce projet, tu peux :
-1. Fork ce dépôt.
-2. Créer une branche pour ta fonctionnalité (`git checkout -b feature-nouvelle-fonction`).
-3. Commit tes modifications (`git commit -am 'Ajout d\'une nouvelle fonctionnalité'`).
-4. Pousser la branche (`git push origin feature-nouvelle-fonction`).
-5. Ouvrir une **Pull Request**.
