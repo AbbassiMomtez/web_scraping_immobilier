@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+.vscode/
+data/annonces.csv  # Ignore le fichier CSV contenant les annonces
