@@ -3,3 +3,5 @@ beautifulsoup4
 pandas
 selenium
 flask
+plotly==6.0.1
+dash==3.0.1
