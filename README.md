@@ -1,56 +1,21 @@
-# Web Scraping Immobilier - API Flask
+# Python for Data Science Project
 
-## Description
-Ce projet permet de récupérer les annonces immobilières publiées en Tunisie sur le site **Tunisie Annonce**. Les informations extraites incluent des détails sur les propriétés disponibles à la vente ou en location, comme le titre, le prix, la localisation, le type de bien, etc. Les données collectées sont exposées via une API REST que l'on peut interroger pour obtenir les annonces sous différents formats (JSON).
+## Introduction
+Ce projet contient des scripts pour le scraping d'annonces immobilières et la visualisation des données via un tableau de bord interactif.
 
-## Fonctionnalités
-- Scraping des annonces immobilières (titre, prix, type de bien, localisation, description, date de publication).
-- Stockage des annonces dans un fichier CSV.
-- API REST pour interagir avec les données :
-  - `GET /annonces` : Récupère toutes les annonces collectées.
-  - `POST /scrape` : Lance une nouvelle session de scraping pour collecter les dernières annonces.
+## Scripts
 
-## Prérequis
-Avant de pouvoir utiliser ce projet, assure-toi que tu as installé Python et les dépendances nécessaires.
+### `dimdate`
+Ce script est à exécuter une seule fois pour générer une dimension date.
 
-### Installer les dépendances
-1. Clone ce dépôt sur ton ordinateur :
-   ```bash
-   git clone https://github.com/<ton_nom_utilisateur>/web_scraping_immobilier.git
-   ```
-2. Crée un environnement virtuel et active-le :
-   ```bash
-   python -m venv venv
-   # Windows
-   venv\Scripts\activate
-   # macOS/Linux
-   source venv/bin/activate
-   ```
-3. Installe les dépendances :
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Instructions d'Exécution
 
-## Lancer le projet
-1. Lance l'application Flask pour démarrer l'API :
-   ```bash
-   python scripts/api.py
-   ```
-
-2. Une fois l'application lancée, tu peux accéder à l'API :
-   - `GET http://127.0.0.1:5000/annonces` : Pour récupérer les annonces collectées.
-   - `POST http://127.0.0.1:5000/scrape` : Pour lancer une nouvelle session de scraping.
-
-## Structure du projet
+### 1. Exécuter l'API de scraping des annonces immobilières
+```bash
+python /scripts/scraper.py
 ```
-/web_scraping_immobilier/
-│── /data/                 # Dossier pour stocker les fichiers CSV
-│── /scripts/              # Dossier contenant les scripts Python
-│   ├── scraper.py         # Script pour extraire les données des annonces
-│   ├── api.py             # Script pour lancer l'API Flask
-│── /notebooks/            # Dossier pour les tests en Jupyter Notebook
-│   ├── test_scraping.ipynb  # Notebook pour tester le scraping
-│── requirements.txt        # Liste des bibliothèques à installer
-│── README.md              # Ce fichier
-│── .gitignore             # Exclure fichiers inutiles (cache, venv, etc.)
+
+### 2. Lancer le serveur Dash pour le tableau de bord
+```bash
+python /scripts/dashboard.py
 ```
